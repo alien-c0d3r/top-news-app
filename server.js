@@ -21,11 +21,11 @@ http.createServer(function (req, res) {
 console.log("HTTP Listening on port: "+port);
 
 var source_cnt=0
-var source_length=10;
 function processFeed(res){
   var feedSource = feed_sources.shift();
 
   if(feedSource){
+
     source_cnt++;
     if((source_cnt)%2!=0) res.write('<div style="background-color:#ACACAD;">');//distinguish feed sources
     else res.write('<div>');
@@ -42,7 +42,7 @@ function processFeed(res){
         }
      });
   } else {
-    res.end("</body>\n</html>"); 
+    res.end("</body>\n</html>");//all finished, so end the response 
   }
 }
 
