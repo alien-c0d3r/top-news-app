@@ -1,6 +1,6 @@
 var feed = require('feed-read'), //rss reader
     http = require("http"),
-    port = process.env.PORT || 3000, 
+    port = 3000, 
     feed_sources = [
         "http://feeds.bbci.co.uk/news/rss.xml",
         "http://news.sky.com/feeds/rss/home.xml"
