@@ -1,0 +1,22 @@
+{
+  "name": "top-news-app",
+  "version": "0.0.0",
+  "description": "top-news-app\r ====================",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alien-c0d3r/top-news-app.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/alien-c0d3r/top-news-app/issues"
+  },
+  "dependencies": {
+    "request": "~2.37.0",
+    "feed-read": "0.0.1"
+  }
+}
